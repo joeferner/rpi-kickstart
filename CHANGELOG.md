@@ -36,6 +36,14 @@ follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   the water sensor, which keeps where the verifier is stored, its login
   routes and its whitelist.
 
+### Changed
+
+- **`embassy-sync` 0.7 → 0.8**, behind `storage`, `auth` and `ota`.
+  **Breaking** for a board that names `storage::Shared`'s or `ota::Reboot`'s
+  mutex types against its own `embassy-sync` 0.7. 0.8 is what `embassy-net`
+  0.9 and `rpi-hal-embassy` are built on, so a board taking `storage` no
+  longer carries two copies of it, and of `embedded-io` with them.
+
 ## [0.1.0] - 2026-10-02
 
 The first release.
