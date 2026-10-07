@@ -1,6 +1,6 @@
 [package]
 name = "rpi-kickstart"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 description = "Application scaffolding for bare-metal Raspberry Pi boards: console, config, storage, web and the rest of the bring-up that is the same on every board, on top of rpi-hal"
 license = "MIT OR Apache-2.0"
